@@ -16,7 +16,7 @@ jobs:
       with:
         node- version: 12
     - name:  Install Surge
-    - run : npm install -g surge
+      run : npm install -g surge
       name: Surge
       run: surge ./ mrizwankhimani.surge.sh --token $({secret.SURGE_TOKEN})
       
